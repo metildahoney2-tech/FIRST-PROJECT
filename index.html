@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Twins - Kids Shopping</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fffaf7;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:700;
+    color:#ff5c8d;
+}
+
+.logo span{
+    color:#4dabf7;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff5c8d;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    min-height:90vh;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    color:#ff5c8d;
+    line-height:1.2;
+}
+
+.hero-content h1 span{
+    color:#4dabf7;
+}
+
+.hero-content p{
+    margin:25px 0;
+    color:#666;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff5c8d;
+    color:#fff;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:#ff3d77;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+}
+
+/* Categories */
+
+.categories{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.section-title{
+    font-size:2.5rem;
+    color:#ff5c8d;
+    margin-bottom:50px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.category-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+}
+
+.category-card h3{
+    margin:15px 0;
+}
+
+/* Products */
+
+.products{
+    padding:80px 8%;
+    background:#fff;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.product{
+    background:#fffaf7;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.product img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.price{
+    color:#ff5c8d;
+    font-weight:bold;
+    font-size:1.2rem;
+    margin:10px 0;
+}
+
+/* Offer */
+
+.offer{
+    background:linear-gradient(135deg,#ff8fb1,#8dc8ff);
+    color:white;
+    text-align:center;
+    padding:80px 8%;
+}
+
+.offer h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding:80px 8%;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.review{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:2.8rem;
+}
+
+nav{
+    display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Little <span>Twins</span></div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Everything For Your <span>Twin Little Stars</span></h1>
+
+        <p>
+            Discover adorable matching outfits, toys, accessories,
+            feeding essentials, strollers, gifts, and more specially
+            selected for twins. Shop quality products with exclusive
+            twin discounts.
+        </p>
+
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="twins.jpeg"
+             alt="Twin Kids">
+    </div>
+
+</section>
+
+<section class="categories">
+
+    <h2 class="section-title">Shop By Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <h3>👕 Matching Outfits</h3>
+            <p>Cute twin fashion collections.</p>
+        </div>
+
+        <div class="category-card">
+            <h3>🧸 Toys</h3>
+            <p>Educational and fun twin toys.</p>
+        </div>
+
+        <div class="category-card">
+            <h3>🍼 Feeding Essentials</h3>
+            <p>Bottles, bibs and feeding sets.</p>
+        </div>
+
+        <div class="category-card">
+            <h3>🎁 Gift Sets</h3>
+            <p>Perfect gifts for twin babies.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products">
+
+    <h2 class="section-title">Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=800">
+            <div class="product-info">
+                <h3>Twin Matching Dress Set</h3>
+                <div class="price">₹1,299</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=800">
+            <div class="product-info">
+                <h3>Soft Toy Combo</h3>
+                <div class="price">₹899</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800">
+            <div class="product-info">
+                <h3>Twin Baby Gift Box</h3>
+                <div class="price">₹1,799</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="offer">
+    <h2>Special Twin Offer 🎉</h2>
+    <p>Buy 2 Products & Get 20% OFF on Matching Collections</p>
+    <a href="#" class="btn">Grab Offer</a>
+</section>
+
+<section class="testimonials">
+
+    <h2 class="section-title">Happy Parents</h2>
+
+    <div class="testimonial-grid">
+
+        <div class="review">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Amazing collection for twins. The matching outfits are
+                adorable and quality is excellent.
+            </p>
+        </div>
+
+        <div class="review">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Fast delivery and wonderful customer support.
+                Highly recommended for twin parents.
+            </p>
+        </div>
+
+        <div class="review">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Best online store for twin baby products.
+                Great discounts and beautiful designs.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h2>Little Twins</h2>
+    <p>Your One-Stop Shop For Twin Kids Products</p>
+    <p>📞 +91 9947181994 | 📧 support@twintreasures.com</p>
+</footer>
+
+</body>
+</html>
